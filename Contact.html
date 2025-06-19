@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact File</title>
+    <link rel="icon" href="favicon-32x32.png">
+</head>
+
+<body>
+    <h1>CONTACT FORM</h1>
+    <br>
+    <h3>Please fill out the following form to submit your details </h3>
+    <h5>(You will be contacted through the given information)</h5>
+    <br>
+    <h3>FORM:</h3>
+
+    <form action="contactsubm.html">
+        <label for="name">Name: </label>
+        <input type="text" id="name" required placeholder="Enter your name"> <br> <br>
+
+        <label for="age">Age: </label>
+        <input type="range" id="age" min="13" max="80" value="13" oninput="volValue.innerText = this.value">
+        <span id="volValue">13</span>
+        <br><br>
+
+        <label for="gender">Choose your gender:</label>
+        <select id="gender">
+            <option value="">--Select--</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Others">Others</option>
+        </select>
+        <br><br>
+
+        <label for="email">Email ID: </label>
+        <input type="email" id="mail" required placeholder="Enter your Email"><br><br>
+
+        <label for="tele">Ph No.: </label>
+        <input type="tel" id="tele" pattern="[0-9]{10}" required placeholder="Enter your mobile number"><br><br>
+
+        <h3>How do you prefer to be contacted:</h3>
+        <label><input type="checkbox" name="method" value="email"> Email</label><br>
+        <label><input type="checkbox" name="method" value="phone number"> Phone No.</label><br>
+        <label><input type="checkbox" name="method" value="sms"> SMS Text</label><br>
+        <br>
+
+        <h3>Select your Inquiry Type:</h3>
+
+        <label><input type="radio" name="Inquiry" value="General" required> General</label><br>
+        <label><input type="radio" name="Inquiry" value="Business"> Business</label><br>
+        <label><input type="radio" name="Inquiry" value="support"> Support</label><br>
+        <label><input type="radio" name="Inquiry" value="Others"> Others</label><br>
+        <br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" rows="5" cols="30" required placeholder="Type your message here..."></textarea>
+        <br>
+        <button type="submit">Submit</button>
+        <br>
+        <p>***</p>
+    </form>
+</body>
+
+</html>
